@@ -635,7 +635,7 @@ body p {
   z-index: 40;
   height: 90vh;
   width: 100%;
-  background-image: url("/images/theme/welcome-image.jpg");
+  background-image: url("/images/theme/welcome-image-1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -649,7 +649,7 @@ body p {
   font-size: 3em;
   font-family: 'Quicksand', 'Vollkorn', serif;
   font-weight: 300;
-  color: #000;
+  color: #fff;
   margin: 0;
 }
 @media (max-width: 768px) {
