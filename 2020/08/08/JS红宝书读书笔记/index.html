@@ -1,0 +1,466 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> - Hexo</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google" content="notranslate" />
+
+  
+  
+  <meta name="description" content="JS红宝书读书笔记第一章 JavaScript简介Ja..."> 
+  
+  <meta name="author" content="John Doe"> 
+
+  
+    <link rel="icon" href="/images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
+  
+  
+    <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
+  
+  
+    <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" sizes="180x180">
+  
+  
+    <meta rel="mask-icon" href="/images/icons/stun-logo.svg" color="#333333">
+  
+  
+    <meta rel="msapplication-TileImage" content="/images/icons/favicon-144x144.png">
+    <meta rel="msapplication-TileColor" content="#000000">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1445822_58xq2j9v1id.css">
+
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/xcode.min.css">
+
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css">
+
+  
+
+  <script>
+    var CONFIG = window.CONFIG || {}
+    CONFIG = {
+      fancybox: true,
+      pjax: false,
+      lazyload: {
+        enable: true,
+        loadingImage: '/images/theme/loading.gif',
+      },
+      donate_alipay: 'https://pic.izhaoo.com/alipay.jpg',
+      donate_wechat: 'https://pic.izhaoo.com/wechat.jpg',
+      motto: {
+        api: '',
+        default: '我在开了灯的床头下，想问问自己的心啊。'
+      },
+      galleries: {
+        enable: 'true'
+      },
+      fab: {
+        enable: 'true',
+        alwaysShow: 'false'
+      },
+      carrier: {
+        enable: 'true'
+      }
+    }
+  </script>
+
+  
+
+  
+<meta name="generator" content="Hexo 5.0.0"></head>
+<body class="lock-screen">
+  <div class="loading"></div>
+  <nav class="menu">
+  <div class="menu-close">
+    <i class="iconfont iconplus"></i>
+  </div>
+  <ul class="menu-content">
+    
+    
+    
+    
+    <li class="menu-item"><a href="/ "> 首页</a></li>
+    
+    
+    
+    
+    <li class="menu-item"><a href="/galleries "> 摄影</a></li>
+    
+    
+    
+    
+    <li class="menu-item"><a href="/archives "> 归档</a></li>
+    
+    
+    
+    
+    <li class="menu-item"><a href="/tags "> 标签</a></li>
+    
+    
+    
+    
+    <li class="menu-item"><a href="/categories "> 分类</a></li>
+    
+    
+    
+    
+    <li class="menu-item"><a href="/about "> 关于</a></li>
+    
+  </ul>
+  <div class="menu-copyright"><p>Copyright© 2019-2020 | <a target="_blank" href="https://www.izhaoo.com">zhaoo</a> .AllRightsReserved</p></div>
+</nav>
+  <main id="main">
+  <div class="container" id="container">
+    <article class="article">
+  <section class="head">
+  <img   class="lazyload" data-original="/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title"></h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>2020-08-08</span
+        class="post-info-item">
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1773</span>
+    </div>
+  </div>
+</section>
+  <section class="main">
+    <section class="content">
+      <h1 id="JS红宝书读书笔记"><a href="#JS红宝书读书笔记" class="headerlink" title="JS红宝书读书笔记"></a>JS红宝书读书笔记</h1><h2 id="第一章-JavaScript简介"><a href="#第一章-JavaScript简介" class="headerlink" title="第一章 JavaScript简介"></a>第一章 JavaScript简介</h2><p>JavaScript实现由三部分组成：</p>
+<ol>
+<li>核心（ECMAScript）</li>
+<li>文档对象模型（DOM）</li>
+<li>浏览器对象模型（BOM）</li>
+</ol>
+<h3 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h3><h4 id="DOM-1级："><a href="#DOM-1级：" class="headerlink" title="DOM 1级："></a>DOM 1级：</h4><ul>
+<li>DOM核心：规定如何映射基于XML的文档解构，以便简化对文档中任意部分的访问和操作</li>
+<li>DOM HTML：在DOM核心的基础上加以扩展，添加了针对HTML的对象和方法</li>
+</ul>
+<h4 id="DOM-2级："><a href="#DOM-2级：" class="headerlink" title="DOM 2级："></a>DOM 2级：</h4><ul>
+<li>DOM视图</li>
+<li>DOM事件</li>
+<li>DOM样式</li>
+<li>DOM遍历和范围</li>
+</ul>
+<h4 id="DOM-3级："><a href="#DOM-3级：" class="headerlink" title="DOM 3级："></a>DOM 3级：</h4><ul>
+<li>DOM加载和保存</li>
+<li>DOM验证</li>
+<li>扩展DOM核心</li>
+</ul>
+<h3 id="BOM"><a href="#BOM" class="headerlink" title="BOM"></a>BOM</h3><ul>
+<li>window</li>
+<li>navigator</li>
+<li>location</li>
+<li>screen</li>
+<li>对cookie的支持</li>
+<li>XMLHttpRequest和IE的ActiveXObject这样的自定义对象</li>
+</ul>
+<h2 id="第二章-在HTML中使用JS"><a href="#第二章-在HTML中使用JS" class="headerlink" title="第二章 在HTML中使用JS"></a>第二章 在HTML中使用JS</h2><h3 id="lt-script-gt"><a href="#lt-script-gt" class="headerlink" title="&lt;script&gt;"></a>&lt;script&gt;</h3><ul>
+<li>async： <ul>
+<li>立即异步下载脚本并执行</li>
+<li>不保证执行顺序</li>
+<li>一定会在load事件前执行，但可能会在DOMContentLoaded事件触发之前或之后执行</li>
+</ul>
+</li>
+<li>defer：<ul>
+<li>立即下载，但延迟执行。延迟到浏览器遇到&lt;/html&gt;标签后再执行。</li>
+<li>不一定会按照顺序执行，也不一定会在DOMContentLoaded事件触发前执行，所以最好只包含一个延迟脚本。</li>
+<li>一些浏览器会忽略这个属性，所以把延迟脚本放在页面底部依旧是最佳选择。</li>
+</ul>
+</li>
+<li>src：在带有src属性的script元素中的js代码会被忽略。</li>
+</ul>
+<h3 id="文档模式"><a href="#文档模式" class="headerlink" title="文档模式"></a>文档模式</h3><ul>
+<li>混杂模式</li>
+<li>标准模式</li>
+</ul>
+<h2 id="第三章-基本概念"><a href="#第三章-基本概念" class="headerlink" title="第三章 基本概念"></a>第三章 基本概念</h2><h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><ul>
+<li>第一个字符必须是一个字母、_ 或 $</li>
+<li>其他字符可以是字母、下划线、美元符号或数字</li>
+<li>不能把关键字、保留字、true、false和null用作标识符</li>
+</ul>
+<h3 id="严格模式"><a href="#严格模式" class="headerlink" title="严格模式"></a>严格模式</h3><p>​    “use strict”</p>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>用var操作符定义的变量将成为定义该变量的作用域的局部变量。</p>
+<p>省略var定义全局变量</p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>6种简单数据类型、1种复杂数据类型</p>
+<h4 id="type-of"><a href="#type-of" class="headerlink" title="type of"></a>type of</h4><p>可以检测的类型：undefined、boolean、string、number、object、function</p>
+<blockquote>
+<p>是操作符不是函数</p>
+<p>typeof null —— “object”</p>
+</blockquote>
+<h4 id="Undefined"><a href="#Undefined" class="headerlink" title="Undefined"></a>Undefined</h4><p>对于未初始化或是未声明的元素，执行typeof都为undefined</p>
+<blockquote>
+<p>所以最好在声明的时候就初始化，以防出现undefined，无法辨别是没有声明还是没有初始化</p>
+</blockquote>
+<h4 id="Null"><a href="#Null" class="headerlink" title="Null"></a>Null</h4><p>null表示一个空对象指针，所以typeof null是“object”</p>
+<blockquote>
+<p>如果定义的变量将来用于保存对象，那么最好初始化未null</p>
+</blockquote>
+<p>undefined 派生自 null</p>
+<p><code>null == undefined  // true</code></p>
+<h4 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h4><table>
+<thead>
+<tr>
+<th align="center">数据类型</th>
+<th align="center">true</th>
+<th align="center">false</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">String</td>
+<td align="center">非空字符串</td>
+<td align="center">“”</td>
+</tr>
+<tr>
+<td align="center">Number</td>
+<td align="center">任何非零数字值（包括无穷大）</td>
+<td align="center">0和NaN</td>
+</tr>
+<tr>
+<td align="center">Object</td>
+<td align="center">任何对象</td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td align="center">Undefined</td>
+<td align="center">n/a</td>
+<td align="center">undefined</td>
+</tr>
+</tbody></table>
+<h4 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h4><ul>
+<li>进制<ul>
+<li>八进制：第一位必须是0，然后是0~7。如果数值超出范围，前导0会被忽略，当作十进制解析。</li>
+<li>十六进制：前两位为0x， 然后是0<del>9、A</del>F。</li>
+</ul>
+</li>
+<li>浮点数：<ul>
+<li>浮点数需要的内存空间是保存整数的两倍，所以ES会不失时机地将浮点数值转换为整数数值。</li>
+<li>ES会将小数点后带有6个零以上的浮点数值转换为e表示法表示的数值</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>浮点数值最高精度是17位小数，0.1+0.2不等于0.3，而是0.3000000000000004</p>
+</blockquote>
+<ul>
+<li><p>数值范围</p>
+<ul>
+<li>Number.MAX_VALUE、Number.MIN_VALUE，超过界限自动转换为Infinity</li>
+<li>isFinite()可以判断是否为Infinity</li>
+<li>Number.NEGATIVE_INFINITY、Number.POSITIVE_INFINITY也可以得到正负Infinity的值</li>
+</ul>
+</li>
+<li><p>NaN：</p>
+<ul>
+<li>任何关于NaN的操作都会返回NaN</li>
+<li>NaN和任何值都不想等，包括他自己</li>
+<li>所以有了isNaN()</li>
+</ul>
+</li>
+<li><p>数值转换：</p>
+<ul>
+<li>Number() 可以用于任何数据类型</li>
+</ul>
+<p><img   class="lazyload" data-original="C:\Users\Hikari\AppData\Roaming\Typora\typora-user-images\image-20200807125924435.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="image-20200807125924435"></p>
+<ul>
+<li>parseInt()、parseFloat() 专门用于字符串<ul>
+<li>parseInt(字符串，进制)</li>
+<li>parseFloat(字符串) 只用于十进制 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+    <section class="extra">
+      
+        <ul class="copyright">
+  
+  <li><strong>本文作者：</strong>John Doe</li>
+  <li><strong>本文链接：</strong><a href="http://yoursite.com/2020/08/08/JS%E7%BA%A2%E5%AE%9D%E4%B9%A6%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.html">http://yoursite.com/2020/08/08/JS%E7%BA%A2%E5%AE%9D%E4%B9%A6%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.html</a></li>
+  <li><strong>版权声明：</strong>本博客所有文章均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
+      rel="external nofollow" target="_blank"> BY-NC-SA </a>许可协议，转载请注明出处！</li>
+  
+</ul>
+      
+      
+        <section class="donate">
+  <div class="qrcode">
+    <img   class="lazyload" data-original="https://pic.izhaoo.com/alipay.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" >
+  </div>
+  <div class="icon">
+    <a href="javascript:;" id="alipay"><i class="iconfont iconalipay"></i></a>
+    <a href="javascript:;" id="wechat"><i class="iconfont iconwechat-fill"></i></a>
+  </div>
+</section>
+      
+      
+      
+    </section>
+    
+      <section class="comments">
+        
+          <div class="btn" id="comments-btn">查看评论</div>
+        
+        
+      </section>
+    
+  </section>
+</article>
+  </div>
+</main>
+  <footer class="footer">
+  <div class="footer-social">
+    
+    
+    
+    
+    
+    <a href="tencent://message/?Menu=yes&uin=894519210 " target="_blank" onMouseOver="this.style.color= '#12B7F5'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  iconQQ "></i>
+    </a>
+    
+    
+    
+    
+    
+    <a href="javascript:; " target="_blank" onMouseOver="this.style.color= '#09BB07'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  iconwechat-fill "></i>
+    </a>
+    
+    
+    
+    
+    
+    <a href="https://www.instagram.com/izhaoo/ " target="_blank" onMouseOver="this.style.color= '#DA2E76'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  iconinstagram "></i>
+    </a>
+    
+    
+    
+    
+    
+    <a href="https://github.com/izhaoo " target="_blank" onMouseOver="this.style.color= '#24292E'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  icongithub-fill "></i>
+    </a>
+    
+    
+    
+    
+    
+    <a href="mailto:izhaoo@163.com " target="_blank" onMouseOver="this.style.color='#FFBE5B'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  iconmail"></i>
+    </a>
+    
+  </div>
+  <div class="footer-copyright"><p>Copyright© 2019-2020 | <a target="_blank" href="https://www.izhaoo.com">zhaoo</a> .AllRightsReserved</p></div>
+</footer>
+  
+      <div class="fab fab-plus">
+    <i class="iconfont iconplus"></i>
+  </div>
+  <div class="fab fab-up">
+    <i class="iconfont iconcaret-up"></i>
+  </div>
+  <div class="fab fab-menu">
+    <i class="iconfont iconmenu"></i>
+  </div>
+  
+</body>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+
+
+<script src="https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+
+
+
+
+
+<script src="https://cdn.bootcdn.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js"></script>
+
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+<script>
+  (function () {
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    } else {
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</html>
