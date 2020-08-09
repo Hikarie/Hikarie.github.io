@@ -145,7 +145,7 @@
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>2020-08-08</span
         class="post-info-item">
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1598</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>6581</span>
     </div>
   </div>
 </section>
@@ -173,13 +173,19 @@
 <li>覆盖（重写）</li>
 <li>向上转型</li>
 </ul>
-<h2 id="类与类之间的关系"><a href="#类与类之间的关系" class="headerlink" title="类与类之间的关系"></a>类与类之间的关系</h2><h3 id="泛化关系（Generalization）"><a href="#泛化关系（Generalization）" class="headerlink" title="泛化关系（Generalization）"></a>泛化关系（Generalization）</h3><p>extentds</p>
+<h2 id="类与类之间的关系"><a href="#类与类之间的关系" class="headerlink" title="类与类之间的关系"></a>类与类之间的关系</h2><p>强弱顺序：泛化 = 实现 &gt; 组合 &gt; </p>
+<h3 id="泛化关系（Generalization）"><a href="#泛化关系（Generalization）" class="headerlink" title="泛化关系（Generalization）"></a>泛化关系（Generalization）</h3><p>extentds 继承</p>
 <p><img   class="lazyload" data-original="https://camo.githubusercontent.com/9bf544d6658e9a1a50f222e10ccd816e98b7d34e/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f63303837346530612d646261332d343637652d396338362d6464393331336530383433652e6a7067" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
-<h3 id="实现关系（Realization）"><a href="#实现关系（Realization）" class="headerlink" title="实现关系（Realization）"></a>实现关系（Realization）</h3><p>implements</p>
+<h3 id="实现关系（Realization）"><a href="#实现关系（Realization）" class="headerlink" title="实现关系（Realization）"></a>实现关系（Realization）</h3><p>implements 类和接口的关系</p>
 <p><img   class="lazyload" data-original="https://camo.githubusercontent.com/d94060f6a651585cfce2592538d0acae65e29d29/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f38336434363662642d393436622d343433302d383534612d6366376230363936643463382e6a7067" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
 <h3 id="聚合关系（Aggregation）"><a href="#聚合关系（Aggregation）" class="headerlink" title="聚合关系（Aggregation）"></a>聚合关系（Aggregation）</h3><p>表示整体由部分组成，但是整体和部分不是强依赖的，整体不存在了部分还是会存在。</p>
+<p>如车和轮胎是整体和部分的关系，轮胎离开车仍然可以存在。</p>
+<ul>
+<li>成员变量</li>
+</ul>
 <p><img   class="lazyload" data-original="https://camo.githubusercontent.com/09c2469e99072158765ebe0ad80885b66e894dcf/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f61306365343362372d616661382d343339372d613936652d3563313261303730663261652e6a7067" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
 <h3 id="组合关系（Composition）"><a href="#组合关系（Composition）" class="headerlink" title="组合关系（Composition）"></a>组合关系（Composition）</h3><p>组合中整体和部分是强依赖的，整体不存在了部分也不存在了。</p>
+<p>如公司和部门是整体和部分的关系，没有公司就不存在部门。</p>
 <p><img   class="lazyload" data-original="https://camo.githubusercontent.com/df45f2c0dfd19aa29e90a5bbcc25ff4b04573b11/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f36613838613339382d633439342d343166352d626236322d3966376662383131646637632e6a7067" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
 <h3 id="关联关系（Association）"><a href="#关联关系（Association）" class="headerlink" title="关联关系（Association）"></a>关联关系（Association）</h3><p>表示不同类对象之间有关联，这是一种静态关系，与运行过程的状态无关，在最开始就可以确定。因此也可以用 1 对 1、多对 1、多对多这种关联关系来表示。比如学生和学校就是一种关联关系，一个学校可以有很多学生，但是一个学生只属于一个学校，因此这是一种多对一的关系，在运行开始之前就可以确定。</p>
 <p><img   class="lazyload" data-original="https://camo.githubusercontent.com/abe57bb2cdca7e4c3a9c12bc7c4c7454f872d53f/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f61336534646336322d306461352d346432322d393466322d3134303037383238313831322e6a7067" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
@@ -191,6 +197,7 @@
 </ul>
 <p><img   class="lazyload" data-original="https://camo.githubusercontent.com/96545f54d2a635babfda9b87e7ec645207a8d900/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f33373934343463392d663164312d343563642d623761612d6230633138343237643338382e6a7067" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
 <h2 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h2><p>S.O.L.I.D</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/wanghanwei007/article/details/80756890">https://blog.csdn.net/wanghanwei007/article/details/80756890</a></p>
 <h3 id="单一责任（SRP）"><a href="#单一责任（SRP）" class="headerlink" title="单一责任（SRP）"></a>单一责任（SRP）</h3><blockquote>
 <p>修改一个类的原因应该只有一个。</p>
 </blockquote>
@@ -202,6 +209,7 @@
 </blockquote>
 <ul>
 <li>扩展就是添加新功能的意思，因此该原则要求在添加新功能时不需要修改代码。</li>
+<li>用抽象构建架构，用实现扩展细节。</li>
 </ul>
 <p><code>装饰者模式，可以动态地将责任附加到对象上，而不用去修改类的代码。</code></p>
 <h3 id="里氏替换（LSP）"><a href="#里氏替换（LSP）" class="headerlink" title="里氏替换（LSP）"></a>里氏替换（LSP）</h3><blockquote>
@@ -233,7 +241,150 @@
 <li>任何类都不应该从具体类派生，<strong>接口或抽象类不依赖于具体实现</strong>；</li>
 <li>任何方法都不应该覆写它的任何基类中的已经实现的方法，<strong>实现类依赖接口或抽象类</strong>。</li>
 </ul>
-<h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><h2 id="创建型"><a href="#创建型" class="headerlink" title="创建型"></a>创建型</h2><h2 id="行为型"><a href="#行为型" class="headerlink" title="行为型"></a>行为型</h2><h2 id="结构型"><a href="#结构型" class="headerlink" title="结构型"></a>结构型</h2>
+<h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><p><a target="_blank" rel="noopener" href="https://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/simple_factory.html">图解设计模式</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1252599548343744/1281319170474017">廖雪峰设计模式</a></p>
+<p>[CS-Notes 设计模式](<a target="_blank" rel="noopener" href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F">https://github.com/CyC2018/CS-Notes/blob/master/notes/设计模式</a> - 目录.md)</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/133263261">前端需要了解的9种设计模式</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/165644447">从设计原则，程序实现目标谈谈前端常用的10种设计模式和应用场景</a></p>
+<p><img   class="lazyload" data-original="https://pic3.zhimg.com/v2-6edda35c81787131998b1d0626436e31_b.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
+<h2 id="创建型"><a href="#创建型" class="headerlink" title="创建型"></a>创建型</h2><p>处理对象的创建，根据实际情况使用合适的方式创建对象。常规的对象创建方式可能会导致设计上的问题，或增加设计的复杂度。创建型模式通过以某种方式控制对象的创建来解决问题。</p>
+<h3 id="工厂"><a href="#工厂" class="headerlink" title="工厂"></a>工厂</h3><blockquote>
+<p>定义一个用于创建对象的接口，让子类决定实例化哪一个类。Factory Method使一个类的实例化延迟到其子类。</p>
+</blockquote>
+<p><strong>简单工厂：</strong></p>
+<p>对不同类对象的创建进行了一层的封装，该模式通过向工厂传递类型来指定要创建的对象。</p>
+<p><img   class="lazyload" data-original="https://img2018.cnblogs.com/blog/1419489/201906/1419489-20190628144601084-563759643.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
+<p><strong>工厂方法模式：</strong></p>
+<p>定义一个抽象工厂，其定义了产品的生产接口，但不负责具体的产品，将生产任务交给不同的派生类工厂。把简单工厂解耦。</p>
+<p><img   class="lazyload" data-original="https://img2018.cnblogs.com/blog/1419489/201906/1419489-20190628154133368-906051111.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
+<p><strong>应用场景：</strong></p>
+<ul>
+<li><strong>一个类不知道它所需要的对象的类：</strong>在工厂方法模式中，客户端不需要知道具体产品类的类名，只需要知道所对应的工厂即可，具体的产品对象由具体工厂类创建；客户端需要知道创建具体产品的工厂类。</li>
+<li><strong>一个类通过其子类来指定创建哪个对象：</strong>在工厂方法模式中，对于抽象工厂类只需要提供一个创建产品的接口，而由其子类来确定具体要创建的对象，利用面向对象的多态性和里氏代换原则，在程序运行时，子类对象将覆盖父类对象，从而使得系统更容易扩展。</li>
+<li><strong>将创建对象的任务委托给多个工厂子类中的某一个，客户端在使用时可以无须关心是哪一个工厂子类创建产品子类，需要时再动态指定</strong>，可将具体工厂类的类名存储在配置文件或数据库中。</li>
+</ul>
+<h3 id="抽象工厂"><a href="#抽象工厂" class="headerlink" title="抽象工厂"></a>抽象工厂</h3><p>抽象工厂模式通过在AbstarctFactory中增加创建产品的接口，并在具体子工厂中实现新加产品的创建，当然前提是子工厂支持生产该产品。否则继承的这个接口可以什么也不干。</p>
+<p><img   class="lazyload" data-original="https://img2018.cnblogs.com/blog/1419489/201906/1419489-20190628170705865-1781414242.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
+<ul>
+<li>一个系统不应当依赖于产品类实例如何被创建、组合和表达的细节，这对于所有类型的工厂模式都是重要的。</li>
+<li><strong>系统中有多于一个的产品族，而每次只使用其中某一产品族。</strong></li>
+<li>属于同一个产品族的产品将在一起使用，这一约束必须在系统的设计中体现出来。</li>
+<li>系统提供一个产品类的库，所有的产品以同样的接口出现，从而使客户端不依赖于具体实现。</li>
+</ul>
+<h3 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h3><blockquote>
+<p>将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。</p>
+</blockquote>
+<p>使用多个“小型”工厂来最终创建出一个完整对象。</p>
+<p>例如，我们把Markdown转HTML看作一行一行的转换，每一行根据语法，使用不同的转换器。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HtmlBuilder</span> </span>&#123;<br>    <span class="hljs-keyword">private</span> HeadingBuilder headingBuilder = <span class="hljs-keyword">new</span> HeadingBuilder();<br>    <span class="hljs-keyword">private</span> HrBuilder hrBuilder = <span class="hljs-keyword">new</span> HrBuilder();<br>    <span class="hljs-keyword">private</span> ParagraphBuilder paragraphBuilder = <span class="hljs-keyword">new</span> ParagraphBuilder();<br>    <span class="hljs-keyword">private</span> QuoteBuilder quoteBuilder = <span class="hljs-keyword">new</span> QuoteBuilder();<br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toHtml</span><span class="hljs-params">(String markdown)</span> </span>&#123;<br>        StringBuilder buffer = <span class="hljs-keyword">new</span> StringBuilder();<br>        markdown.lines().forEach(line -&gt; &#123;<br>            <span class="hljs-keyword">if</span> (line.startsWith(<span class="hljs-string">&quot;#&quot;</span>)) &#123;<br>                buffer.append(headingBuilder.buildHeading(line)).append(<span class="hljs-string">&#x27;\n&#x27;</span>);<br>            &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (line.startsWith(<span class="hljs-string">&quot;&gt;&quot;</span>)) &#123;<br>                buffer.append(quoteBuilder.buildQuote(line)).append(<span class="hljs-string">&#x27;\n&#x27;</span>);<br>            &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (line.startsWith(<span class="hljs-string">&quot;---&quot;</span>)) &#123;<br>                buffer.append(hrBuilder.buildHr(line)).append(<span class="hljs-string">&#x27;\n&#x27;</span>);<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                buffer.append(paragraphBuilder.buildParagraph(line)).append(<span class="hljs-string">&#x27;\n&#x27;</span>);<br>            &#125;<br>        &#125;);<br>        <span class="hljs-keyword">return</span> buffer.toString();<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h3><blockquote>
+<p>用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。</p>
+</blockquote>
+<p>是指创建新对象的时候，根据现有的一个原型来创建。</p>
+<p>使用原型模式更好的方式是定义一个<code>copy()</code>方法，返回明确的类型：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs JAVA"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span> </span>&#123;<br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> id;<br>    <span class="hljs-keyword">private</span> String name;<br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> score;<br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> Student <span class="hljs-title">copy</span><span class="hljs-params">()</span> </span>&#123;<br>        Student std = <span class="hljs-keyword">new</span> Student();<br>        std.id = <span class="hljs-keyword">this</span>.id;<br>        std.name = <span class="hljs-keyword">this</span>.name;<br>        std.score = <span class="hljs-keyword">this</span>.score;<br>        <span class="hljs-keyword">return</span> std;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="单例"><a href="#单例" class="headerlink" title="单例"></a>单例</h3><blockquote>
+<p>保证一个类仅有一个实例，并提供一个访问它的全局访问点。</p>
+</blockquote>
+<p>目的是为了保证在一个进程中，某个类有且仅有一个实例。</p>
+<p>因此，自然不能让调用方使用<code>new</code>来创建实例了。所以，**单例的构造方法必须是<code>private</code>**，这样就防止了调用方自己创建实例。</p>
+<p>提供一个静态方法，直接返回实例。</p>
+<p><strong>实现方法：</strong></p>
+<ol>
+<li>只有<code>private</code>构造方法，确保外部无法实例化；</li>
+<li>通过<code>private static</code>变量持有唯一实例，保证全局唯一性；</li>
+<li>通过<code>public static</code>方法返回此唯一实例，使外部调用方能获取到实例。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Singleton</span> </span>&#123;<br>    <span class="hljs-comment">// 静态字段引用唯一实例:</span><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Singleton INSTANCE = <span class="hljs-keyword">new</span> Singleton();<br><br>    <span class="hljs-comment">// 通过静态方法返回实例:</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Singleton <span class="hljs-title">getInstance</span><span class="hljs-params">()</span> </span>&#123;<br>        <span class="hljs-keyword">return</span> INSTANCE;<br>    &#125;<br><br>    <span class="hljs-comment">// private构造方法保证外部无法实例化:</span><br>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Singleton</span><span class="hljs-params">()</span> </span>&#123;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><strong>应用场景：</strong></p>
+<ul>
+<li>在应用场景中，某类只要求生成一个对象的时候，如一个班中的班长、每个人的身份证号等。</li>
+<li>当对象需要被共享的场合。由于单例模式只允许创建一个对象，共享该对象可以节省内存，并加快对象访问速度。如 Web 中的配置对象、数据库的连接池等。</li>
+<li>当某类需要频繁实例化，而创建的对象又频繁被销毁的时候，如多线程的线程池、网络连接池等。</li>
+</ul>
+<h2 id="行为型"><a href="#行为型" class="headerlink" title="行为型"></a>行为型</h2><h3 id="观察者"><a href="#观察者" class="headerlink" title="观察者"></a>观察者</h3><blockquote>
+<p>定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并被自动更新。</p>
+</blockquote>
+<p>建立一套低耦合的消息触发机制。</p>
+<p><img   class="lazyload" data-original="https://img2018.cnblogs.com/blog/1419489/201906/1419489-20190629173030851-1788921679.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
+<p><strong>Subject:</strong></p>
+<p>　抽象被观察者，仅提供注册和删除观察者对象的接口声明。</p>
+<p><strong>ConcreteSubject:</strong></p>
+<p>　具体被观察者对象，该对象中收集了所有需要被通知的观察者，并可以动态的增删集合中的观察者。当其状态发生变化时会通知所有观察者对象。</p>
+<p><strong>Observer:</strong></p>
+<p>　抽象观察者，为所有观察者定义获得通知的统一接口；</p>
+<p><strong>ConcreteObserver:</strong></p>
+<p>　观察者对象，其关注对象为Subject，能接受Subject变化时发出的通知并更新自身状态。</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>观察者模式可以实现<strong>表示层和数据逻辑层的分离</strong>，并定义了稳定的消息更新传递机制，抽象了更新接口，使得可以有各种各样不同的表示层作为具体观察者角色。</li>
+<li>观察者模式在观察目标和观察者之间建立一个抽象的耦合。</li>
+<li>观察者模式支持广播通信。</li>
+<li>观察者模式符合“开闭原则”的要求。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>如果一个观察目标对象有很多直接和间接的观察者的话，将所有的观察者都通知到会花费很多时间。</li>
+<li>如果在观察者和观察目标之间有循环依赖的话，观察目标会触发它们之间进行循环调用，可能导致系统崩溃。</li>
+<li>观察者模式没有相应的机制让观察者知道所观察的目标对象是怎么发生变化的，而仅仅只是知道观察目标发生了变化。</li>
+</ul>
+<p><strong>使用场景：</strong></p>
+<ul>
+<li>一个抽象模型有两个方面，其中一个方面依赖于另一个方面。将这些方面封装在独立的对象中使它们可以各自独立地改变和复用。</li>
+<li>一个对象的改变将导致其他一个或多个对象也发生改变，而不知道具体有多少对象将发生改变，可以降低对象之间的耦合度。</li>
+<li>一个对象必须通知其他对象，而并不知道这些对象是谁。</li>
+<li>需要在系统中创建一个触发链，A对象的行为将影响B对象，B对象的行为将影响C对象……，可以使用观察者模式创建一种链式触发机制。</li>
+</ul>
+<h4 id="bangbang-VUE中的观察者模式："><a href="#bangbang-VUE中的观察者模式：" class="headerlink" title=":bangbang: VUE中的观察者模式："></a>:bangbang: VUE中的观察者模式：</h4><p><img   class="lazyload" data-original="https://pic2.zhimg.com/v2-e681c24702efc742404ac94f5f57a1a5_1440w.jpg?source=172ae18b" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="从vue源码看观察者模式"></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/33373207">从vue源码看观察者模式</a></p>
+<h4 id="bangbang-观察者模式和发布订阅者模式有什么不同？"><a href="#bangbang-观察者模式和发布订阅者模式有什么不同？" class="headerlink" title=":bangbang: 观察者模式和发布订阅者模式有什么不同？"></a>:bangbang: 观察者模式和发布订阅者模式有什么不同？</h4><p><img   class="lazyload" data-original="https://pic2.zhimg.com/80/v2-540a78ba3127b0c6882adc668e7a3535_720w.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
+<p>从表面上看：</p>
+<ul>
+<li>观察者模式里，只有两个角色 —— 观察者 + 被观察者</li>
+<li>而发布订阅模式里，却不仅仅只有发布者和订阅者两个角色，还有一个经常被我们忽略的 —— 经纪人Broker（事件调度中心）</li>
+</ul>
+<p>往更深层次讲：</p>
+<ul>
+<li>观察者和被观察者，是<strong>松耦合</strong>的关系</li>
+<li>发布者和订阅者，则<strong>完全不存在耦合</strong></li>
+</ul>
+<p>从使用层面上讲：</p>
+<ul>
+<li>观察者模式，多用于单个应用内部</li>
+<li>发布订阅模式，则更多的是一种跨应用的模式(cross-application pattern)，比如我们常用的消息中间件</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/51357583"> 观察者模式 vs 发布订阅模式</a></p>
+<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><h3 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h3><h2 id="结构型"><a href="#结构型" class="headerlink" title="结构型"></a>结构型</h2><h3 id="适配器"><a href="#适配器" class="headerlink" title="适配器"></a>适配器</h3><blockquote>
+<p>将一个类的接口转换成客户希望的另外一个接口，使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。</p>
+</blockquote>
+<p><img   class="lazyload" data-original="https://camo.githubusercontent.com/d7663134e44e402e7119181c327e813e89f081eb/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f33643562383238652d356334642d343864382d613434302d3238316534613865316339322e706e67" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
+<p><strong>对象适配器：</strong></p>
+<p><img   class="lazyload" data-original="https://img2018.cnblogs.com/blog/1419489/201906/1419489-20190627170534062-245383011.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
+<p><strong>类适配器：</strong></p>
+<p><img   class="lazyload" data-original="https://img2018.cnblogs.com/blog/1419489/201906/1419489-20190626235216119-1356099887.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  alt="img"></p>
+<p><strong>实现方法：</strong></p>
+<ol>
+<li>实现目标接口；</li>
+<li>内部持有一个待转换接口的引用；</li>
+<li>在目标接口的实现方法内部，调用待转换接口的方法。</li>
+</ol>
+<p><strong>优点</strong>：</p>
+<ul>
+<li>将目标类和适配者类解耦，通过引入一个适配器类来重用现有的适配者类，而无须修改原有代码。</li>
+<li>增加了类的透明性和复用性，将具体的实现封装在适配者类中，对于客户端类来说是透明的，而且提高了适配者的复用性。</li>
+<li>灵活性和扩展性都非常好，通过使用配置文件，可以很方便地更换适配器，也可以在不修改原有代码的基础上增加新的适配器类，完全符合“开闭原则”。</li>
+</ul>
+<p><strong>适用场景：</strong></p>
+<ul>
+<li>系统需要使用现有的类，而这些类的接口不符合系统的需要。</li>
+<li>想要建立一个可以重复使用的类，用于与一些彼此之间没有太大关联的一些类，包括一些可能在将来引进的类一起工作。</li>
+</ul>
+<h3 id="装饰器"><a href="#装饰器" class="headerlink" title="装饰器"></a>装饰器</h3><h3 id="代理"><a href="#代理" class="headerlink" title="代理"></a>代理</h3><h3 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h3>
     </section>
     <section class="extra">
       
