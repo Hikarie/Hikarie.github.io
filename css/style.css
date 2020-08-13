@@ -78,7 +78,7 @@ body a {
   text-decoration: none;
 }
 body a:hover {
-  color: #ffbe5b;
+  color: #639bbf;
 }
 body a,
 body a:hover {
@@ -131,23 +131,23 @@ body p {
   background-color: #fff;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #ffbe5b;
+  background-color: #639bbf;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #ffbe5b;
+  background-color: #639bbf;
 }
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
   transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
 }
 *::selection {
-  background: #ffbe5b;
+  background: #639bbf;
 }
 *::-moz-selection {
-  background: #ffbe5b;
+  background: #639bbf;
 }
 *::-webkit-selection {
-  background: #ffbe5b;
+  background: #639bbf;
 }
 .container {
   width: 100%;
@@ -635,7 +635,7 @@ body p {
   z-index: 40;
   height: 90vh;
   width: 100%;
-  background-image: url("/images/theme/welcome-image-1.jpg");
+  background-image: url("/images/theme/welcome-image-2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -754,7 +754,7 @@ body p {
   font-size: 1.5em;
 }
 .fab:hover {
-  background-color: #ffbe5b;
+  background-color: #639bbf;
   color: #33333d;
   cursor: pointer;
 }
@@ -918,7 +918,7 @@ body p {
   transform: rotate(45deg);
 }
 .menu .menu-close i {
-  color: #ffbe5b;
+  color: #639bbf;
   font-size: 1.5em;
 }
 .menu .menu-content {
@@ -1136,7 +1136,7 @@ body p {
   background-color: #f6f8fa;
   padding: 2px 5px;
   border-radius: 2px;
-  color: #ffbe5b;
+  color: #639bbf;
 }
 .article .main .content a {
   text-decoration: underline !important;
@@ -1190,7 +1190,7 @@ body p {
   margin: 0 0 1em;
   padding: 15px 20px;
   background-color: #f6f8fa;
-  border-left: 4px solid #ffbe5b;
+  border-left: 4px solid #639bbf;
 }
 .article .main .content blockquote p {
   margin: 0;
@@ -1199,7 +1199,7 @@ body p {
   margin-top: 50px;
 }
 .article .extra .copyright {
-  border-left: 4px solid #ffbe5b;
+  border-left: 4px solid #639bbf;
   background-color: #f6f8fa;
   list-style: none;
   padding: 15px 20px;
@@ -1278,7 +1278,7 @@ body p {
 }
 .article .extra .tag-list .tag-list-item:hover {
   cursor: pointer;
-  background-color: #ffbe5b;
+  background-color: #639bbf;
 }
 .article .extra .tag-list .tag-list-item:hover a {
   color: #fff;
@@ -1301,7 +1301,7 @@ body p {
   text-align: center;
 }
 .article .comments .btn:hover {
-  background-color: #ffbe5b;
+  background-color: #639bbf;
   color: #fff;
   transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
   cursor: pointer;
@@ -1395,7 +1395,7 @@ body p {
   margin-right: 10px;
 }
 .tags a:hover {
-  background-color: #ffbe5b;
+  background-color: #639bbf;
   color: #fff !important;
 }
 .categories {
